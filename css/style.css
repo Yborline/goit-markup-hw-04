@@ -113,12 +113,12 @@ body {
 .site-nav .link:active {
   color: var(--blue-color);
 }
-.site-nav .portfolio:visited,
-.site-nav .studio:visited {
+.nav .portfolio:visited,
+.nav .studio:visited {
   color: var(--blue-color);
 }
 
-.contact-nav li:hover,
+.contact-nav .link:hover,
 .contact-nav .link:focus {
   color: var(--blue-color);
   fill: var(--blue-color);
