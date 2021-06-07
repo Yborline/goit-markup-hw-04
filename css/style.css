@@ -500,11 +500,11 @@ body {
 
 .text-final {
   color: var(--white-color);
-  font-style: 700;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.143;
   vertical-align: Top;
-  letter-spacing: 3%;
+  letter-spacing: 0.03em;
   margin-bottom: 20px;
 }
 
