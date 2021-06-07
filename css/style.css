@@ -33,6 +33,18 @@ body {
 /* Списки  */
 
 /* Навигация сайта  */
+
+.tell-tell,
+.mail-mail {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.list-tell {
+  align-items: baseline;
+  justify-content: start;
+  color: var(--tell-color);
+}
 .icons-contact-tell {
   width: 10px;
   height: 16px;
@@ -44,6 +56,7 @@ body {
   width: 16px;
   height: 12px;
   margin-right: 10px;
+  fill: currentColor;
 }
 .contact-nav .list-tell:hover,
 .contact-nav .list-tell:hover,
@@ -55,6 +68,7 @@ body {
 
 .navigation .container {
   display: flex;
+  align-items: baseline;
 }
 .navigation .nav {
   display: flex;
@@ -70,7 +84,9 @@ body {
 }
 .contact-nav {
   display: flex;
-  align-items: center;
+  height: 16px;
+  align-items: baseline;
+  align-content: center;
 }
 .contact-nav li:not(:first-child) {
   margin-left: 50px;
@@ -123,13 +139,14 @@ body {
 
 .hero .container {
   padding: 200px 452px;
+  width: 1600px;
   display: flex;
   align-items: center;
   flex-flow: column;
   background-image: linear-gradient(
       to top,
-      rgba(89, 106, 114, 0.6),
-      rgba(206, 220, 23, 0.4)
+      rgba(130, 67, 247, 0.068),
+      rgba(138, 125, 4, 0.068)
     ),
     url(../images/background.png);
   background-size: cover;
@@ -144,7 +161,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   width: 696px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 /* Hero block */
 /* Buttons */
@@ -236,7 +253,7 @@ body {
   line-height: 1.142;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 .text-section {
   color: var(--tell-color);
@@ -276,39 +293,38 @@ body {
   width: 20px;
   height: 20px;
 }
-.icon-list-people li {
+.icon-list-people a {
   /* padding-bottom: 30px; */
   width: 44px;
   height: 44px;
   border-radius: 50%;
   padding: 12px;
 }
+
+.icons-social {
+  color: var(--icon-color);
+}
+
 .icon-list-people {
   display: flex;
   justify-content: center;
   flex-direction: row;
   padding-bottom: 30px;
 }
-.icon-list-people svg {
+.icon-list-people a {
   flex-direction: row;
+  color: var(--icon-color);
 }
 .icon-list-people li:not(:last-child) {
   margin-right: 10px;
 }
-.icon-list-people li:hover,
-.icon-list-people li:focus {
+.icon-list-people a:hover,
+.icon-list-people a:focus {
   fill: var(--white-color);
   background-color: var(--blue-color);
 }
-.icon-list-people .icons-social {
-  fill: var(--icon-color);
-}
-.icons-social :hover,
-.icons-social :focus {
-  fill: var(--white-color);
-  background-color: var(--blue-color);
-}
-.icons-social a {
+
+.social-link {
   fill: currentColor;
 }
 /* Icon  */
@@ -356,8 +372,8 @@ body {
 /* Постоянные клиенты */
 
 .client-section .container {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .client-list li {
   width: 170px;
@@ -400,25 +416,21 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+
 .project-portfolio li:not(:nth-child(3n)) {
   margin-right: 30px;
 }
 .project-portfolio li:nth-child(-n + 6) {
   margin-bottom: 30px;
 }
-.project-portfolio li:hover,
-.project-portfolio li:focus,
-.project-portfolio li:active {
-  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0 px 4px 4px rgba(0, 0, 0, 0.06),
-    0px 1px 1px rgba(0, 0, 0, 0.06);
-}
+
 /* Card */
-.project-portfolio > li {
+.project-portfolio li {
   background-color: var(--white-color);
   border: 1px solid var(--solid-color);
-  /* box-sizing: border-box; */
-  flex-basis: max-content;
+  box-sizing: border-box;
   width: 370px;
+  height: 404px;
 }
 
 .pro-tittle {
@@ -502,8 +514,7 @@ body {
 
 .social-cont {
   margin-left: 70px;
-  padding-top: 12px;
-  padding-bottom: 100px;
+  align-items: baseline;
 }
 
 .social-media {
@@ -526,24 +537,25 @@ body {
 .social-media .container {
   display: flex;
 }
-.social-media li {
+.social-media a {
   width: 44px;
   height: 44px;
   border-radius: 50%;
   padding: 12px;
   background-color: var(--icon-footer);
+  color: var(--white-color);
   flex-direction: row;
 }
 .social-media li:not(:last-child) {
   margin-right: 10px;
 }
-.social-media li:hover,
-.social-media li:focus {
+.social-media a:hover,
+.social-media a:focus {
   fill: var(--white-color);
   background-color: var(--blue-color);
 }
-.social-media .icons-footer {
-  fill: var(--icon-color);
+.icons-footer {
+  fill: currentColor;
 }
 .social-media :hover,
 .social-mediae :focus {
