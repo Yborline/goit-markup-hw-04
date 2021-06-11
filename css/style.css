@@ -415,11 +415,9 @@ body {
 .project-portfolio {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.project-portfolio li:not(:nth-child(3n)) {
-  margin-right: 30px;
-}
 .project-portfolio li:nth-child(-n + 6) {
   margin-bottom: 30px;
 }
@@ -428,9 +426,6 @@ body {
 .project-portfolio li {
   background-color: var(--white-color);
   border: 1px solid var(--solid-color);
-  box-sizing: border-box;
-  width: 370px;
-  height: 404px;
 }
 
 .pro-tittle {
@@ -457,6 +452,7 @@ body {
 /* indentation */
 .footer .container {
   padding: 60px 15px;
+  align-items: baseline;
 }
 
 .ad-footer :not(:last-child) {
